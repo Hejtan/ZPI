@@ -15,6 +15,7 @@ import { RoleGuard } from './role.guard';
 import { ModeratorAcceptationSiteComponent } from './moderator-acceptation-site/moderator-acceptation-site.component';
 import { ModeratorAcceptationDetailsSiteComponent } from './moderator-acceptation-details-site/moderator-acceptation-details-site.component';
 import { ModeratorUsersSearchSiteComponent } from './moderator-users-search-site/moderator-users-search-site.component';
+import { AdminCategoryComponent } from './admin-category/admin-category.component';
 
 
 const routes: Routes = [
@@ -32,6 +33,8 @@ const routes: Routes = [
   { path: 'admin-acceptance', component: ModeratorAcceptationSiteComponent, canActivate: [AuthGuard, RoleGuard],  data: { allowedRoles:  ['MODERATOR', 'ADMIN'] } },
   { path: 'admin-event-details/:id', component: ModeratorAcceptationDetailsSiteComponent, canActivate: [AuthGuard, RoleGuard],  data: { allowedRoles:  ['MODERATOR', 'ADMIN'] } },
   { path: 'admin-users', component: ModeratorUsersSearchSiteComponent, canActivate: [AuthGuard, RoleGuard],  data: { allowedRoles:  ['MODERATOR', 'ADMIN'] } },
+  { path: 'category-management', component: AdminCategoryComponent, canActivate: [AuthGuard, RoleGuard],  data: { allowedRoles:  ['ADMIN'] } },
+  
 ];
 
 @NgModule({

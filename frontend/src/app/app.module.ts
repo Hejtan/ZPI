@@ -11,7 +11,6 @@ import { UserFooterComponent } from './user-footer/user-footer.component';
 import { SwiperDirective } from './swiper.directive';
 import { RegisterSiteComponent } from './register-site/register-site.component';
 import { LoginSiteComponent } from './login-site/login-site.component';
-import { UserSidebarSearchComponent } from './user-sidebar-search/user-sidebar-search.component';
 import { DescriptionPageComponent } from './description-page/description-page.component';
 import { EventService } from './event.service';
 import { AuthenticationService } from './authentication.service';
@@ -30,6 +29,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ModeratorAcceptationSiteComponent } from './moderator-acceptation-site/moderator-acceptation-site.component';
 import { ModeratorAcceptationDetailsSiteComponent } from './moderator-acceptation-details-site/moderator-acceptation-details-site.component';
 import { ModeratorUsersSearchSiteComponent } from './moderator-users-search-site/moderator-users-search-site.component';
+import { AdminCategoryComponent } from './admin-category/admin-category.component';
 
 
 register();
@@ -43,7 +43,6 @@ register();
     UserHeaderComponent,
     UserFooterComponent,
     SwiperDirective,
-    UserSidebarSearchComponent,
     DescriptionPageComponent,
     MapComponent,
     AboutUsComponent,
@@ -56,6 +55,7 @@ register();
     ModeratorAcceptationSiteComponent,
     ModeratorAcceptationDetailsSiteComponent,
     ModeratorUsersSearchSiteComponent,
+    AdminCategoryComponent,
   ],
   imports: [
     BrowserModule,
