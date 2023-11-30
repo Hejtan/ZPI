@@ -49,7 +49,8 @@ public class EventController {
         return eventRepository.findById(eventId).getUserList();
     }
     public boolean deleteEvent(int eventId){
-        return eventRepository.delete(eventRepository.findById(eventId);
+        eventRepository.delete(eventRepository.findById(eventId));
+        return true;
     }
 
     public List<Event> getEventsByOrganiser(int userId) {
